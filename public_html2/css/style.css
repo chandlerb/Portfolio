@@ -1,0 +1,306 @@
+body {
+    background-image:url("images/Background_test.JPG");
+    font-family: "Ubuntu";
+    background-size: 100%;
+}
+/**********************************************
+Initalize Wrapper & Content
+**********************************************/
+#wrapper {
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    height: 0px;
+    width: 100%;
+    background-color: rgba(169,169,169, .0);
+}
+
+#content{
+    height:100%;
+    color:rgba(169,169,169,.0);
+}
+/**********************************************
+Main page name img 
+**********************************************/
+
+#name {
+    z-index: -1;
+    opacity:.0;
+    text-align: center;
+    width:80%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+/**********************************************
+Menu Icon
+**********************************************/
+#menu {
+    height:20px;
+    width:20px;
+    top:20px;
+    left:30px;
+    position:absolute;
+    border:solid;
+    border-width: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+}
+#menu:hover {
+    cursor: pointer;
+    border-color:rgba(255, 255, 255, .0);
+    transition: 0.3s;
+}
+
+/**********************************************
+Styling for the menu popup
+**********************************************/
+#menu_fill{
+    opacity:.0;
+    transition:opacity 2s;
+}
+#menu_options {
+    position:absolute;
+    top:20px;
+    left:82px;
+    background-color: rgba(24, 23, 36, .7);
+    z-index:2;
+}
+.menu_choice {
+    font-size: 30pt;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    color:rgba(255,255,255,1);
+}
+.menu_choice:hover {
+    cursor: pointer;
+    background-color: rgba(24, 23, 36, 1);
+    transition: background-color 0.5s ease;
+    color:#D5FFFF;
+}
+
+/**********************************************
+Icons on main page 
+**********************************************/
+#icons{
+    margin-top: 5%;
+}
+#l_con {
+    position:fixed;
+    bottom:5%;
+    left:15%;
+}
+#lc_con {
+    position:fixed;
+    bottom:5%;
+    left:35%;
+}
+#r_con {
+    position:fixed;
+    bottom:5%;
+    right:35%;
+}
+#rc_con {
+    position:fixed;
+    bottom:5%;
+    right:15%;
+}
+#icons img{
+    opacity:.7;
+    width:75px;
+}
+#icons img:hover{
+    opacity:1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+/**********************************************
+        Content styling for pages 
+**********************************************/
+#about_content{
+    height:92.5%;
+    margin-left: 10%;
+    width:80%;
+    margin-top: 2.5%;
+    text-align: center;
+    overflow-y: scroll;
+
+}
+#about_content_about{
+    height:92.5%;
+    margin-left: 10%;
+    width:80%;
+    text-align: center;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/**********************************************
+        ATTEMPT FOR PROFILE PAGE 
+**********************************************/
+video {
+    width:80%;
+}
+.profile_images_style {
+    width:50%;
+}
+.fill_content{
+    height:300px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    border:solid;
+}
+/**********************************************
+        STYLE HELP FOR SKLLS PAGE
+**********************************************/
+#r_table{
+    float:left;
+}
+#l_table{
+    float:right;
+}
+td {
+    padding-left:20px;
+    padding-right:20px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+    color:rgb(90, 90, 90);
+}
+
+/**********************************************
+              CENTERING AN IMAGE
+**********************************************/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/**********************************************
+                COLUMN SPACING 
+**********************************************/
+.column {
+    padding-left:1%;
+    padding-right:1%;
+    float: left;
+    width: 23%;
+}
+.column2 {
+    padding-left:1%;
+    padding-right:1%;
+    float: left;
+    width: 48%;
+}
+.column3 {
+    padding-left:1%;
+    padding-right:1%;
+    float: left;
+    width: 31%;
+    background-color: rgba(255,255,255,.9);
+    height:300px;
+}
+.row {
+    display: flex;
+    margin-bottom: 15px;
+    border:solid;
+    padding-top:5px;
+    background-color:rgba(75,73,91,0.5);
+}
+/**********************************************
+                CONTACT PAGE
+**********************************************/
+#contact_img {
+    top:0px;
+    left:0px;
+    position:absolute;
+    width:250px;
+    z-index: -1;
+}
+#tile_top{
+    display: flex;
+    top:20px;
+    left:140px;
+    position:absolute;
+    width:100%;
+    background-color: rgba(255,255,255,.9);
+
+}
+#text_content{
+    padding-left: 250px;
+    width:550px;
+    top:50px;
+    position:absolute;
+    background-color: rgba(250,250,250,.9);
+    z-index: -2;
+}
+#text_content_bottom{
+    width:808px;
+    position:absolute;
+    top:227.5px;
+    z-index:1;
+}
+#resume_img:hover {
+    filter: blur(2px);
+    transition:1s;
+}
+
+/**********************************************
+                GRID & PORTFOLIO 
+**********************************************/
+
+.grid-container {
+    margin-top:10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+  }
+.grid-container > div {
+    width:400px;
+}
+.tile1 {
+    background-color: rgba(55, 112, 159, 1);
+}
+.tile2 {
+    background-color: #4c6961;
+}
+.tile3 {
+    background-color: rgba(145, 230, 190, 1);
+}
+.tile_white {
+    background-color: rgb(255,255,255);
+}
+.text{
+    font-size:11pt;
+    padding:10px;
+    margin-top:-10px;
+    background-color:rgba(255, 255, 255, 1);
+  }
+.title_icon{
+    width:60%;
+    transition: all .2s ease-in-out;
+}
+.title_icon:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+  }
+.title_icon_git:hover {
+    transition: all .2s ease-in-out;
+    cursor:pointer;
+    transform: scale(1.5);
+  }
+
+
+
